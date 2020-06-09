@@ -63,10 +63,10 @@ arg_enum!{
     }
 }
 
-
 #[derive(Debug, Clone, Eq, PartialEq)]
 pub enum LockingStrategy {
     NonBlocking,
+    #[allow(dead_code)]
     AlreadyLocked,
     Lock
 }
